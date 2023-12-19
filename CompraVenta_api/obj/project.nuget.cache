@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fxy7iVePBSQUczrDbF5VXD5GQzYDSmMTeHLRNVSmhms6RhlNGaLlc2wllKavpRHuzohVSKDU5Je4AZ1K0dpJpA==",
+  "dgSpecHash": "P1YfLnwx8V+PSS3i6gl21m3lLj+FO49WCfp1vvlC1Ma3CZFa0LYNbnk13KVpw+ZyoqAdAlsGLAKYIxY7yM7UnA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ezequiel\\Dropbox\\Mi PC (DESKTOP-SVJIIS4)\\Desktop\\Final Algoritmos II\\CompraVenta_api\\CompraVenta_api.csproj",
+  "projectFilePath": "C:\\Users\\Ezequiel\\Dropbox\\Mi PC (DESKTOP-SVJIIS4)\\Desktop\\CompraVentaPropiedades\\CompraVentaPropiedades\\CompraVenta_api\\CompraVenta_api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ezequiel\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Ezequiel\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.5\\microsoft.aspnetcore.openapi.7.0.5.nupkg.sha512",
