@@ -12,5 +12,6 @@ namespace CompraVenta_api.Data
             }
 
             public DbSet<Propiedad> Propiedades{get; set;}
+            public DbSet<Usuario> Usuarios{get; set;}
     }
 }
