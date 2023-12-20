@@ -142,3 +142,4 @@ C:\Users\Ezequiel\Dropbox\Mi PC (DESKTOP-SVJIIS4)\Desktop\GitVentasCompras\Compr
 C:\Users\Ezequiel\Dropbox\Mi PC (DESKTOP-SVJIIS4)\Desktop\GitVentasCompras\CompraVentaPropiedades\CompraVenta_api\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\Ezequiel\Dropbox\Mi PC (DESKTOP-SVJIIS4)\Desktop\GitVentasCompras\CompraVentaPropiedades\CompraVenta_api\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Ezequiel\Dropbox\Mi PC (DESKTOP-SVJIIS4)\Desktop\GitVentasCompras\CompraVentaPropiedades\CompraVenta_api\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Ezequiel\Dropbox\Mi PC (DESKTOP-SVJIIS4)\Desktop\GitVentasCompras\CompraVentaPropiedades\CompraVenta_api\bin\Debug\net7.0\BCrypt.Net-Core.dll

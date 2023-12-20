@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "VFXloqPPetOlPSTcvZRbhh9WzlsP+5hZPkbMClbchbbns3IZXiEdV8iI/4pfIXHckpa13YEqhMED1c+g/mGy6w==",
+  "dgSpecHash": "iO5f9YJpdmnC7dMn6EuE3pI3L0aeC8Yms+YhDg+54A3XOFG8SLd7/kfLuvtIkj8kFETnKBMf/oSz7Gv9XRi1Sw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Ezequiel\\Dropbox\\Mi PC (DESKTOP-SVJIIS4)\\Desktop\\GitVentasCompras\\CompraVentaPropiedades\\CompraVenta_api\\CompraVenta_api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Ezequiel\\.nuget\\packages\\bcrypt.net-core\\1.6.0\\bcrypt.net-core.1.6.0.nupkg.sha512",
     "C:\\Users\\Ezequiel\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Ezequiel\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\7.0.0\\microsoft.aspnetcore.authentication.jwtbearer.7.0.0.nupkg.sha512",
     "C:\\Users\\Ezequiel\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.5\\microsoft.aspnetcore.openapi.7.0.5.nupkg.sha512",

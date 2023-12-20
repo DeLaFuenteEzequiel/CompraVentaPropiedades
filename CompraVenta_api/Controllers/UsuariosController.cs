@@ -94,7 +94,7 @@ namespace CompraVenta_api.Controllers
 
         private string GenerarTokenJwt(Usuario usuario)
         {
-            var key = GenerarClaveSegura(); 
+            var key = GenerarClaveSegura(); // Usa la clave generada aleatoriamente
             var tokenHandler = new JwtSecurityTokenHandler();
             var tokenDescriptor = new SecurityTokenDescriptor
             {
@@ -114,7 +114,7 @@ namespace CompraVenta_api.Controllers
         {
             using (var generator = RandomNumberGenerator.Create())
             {
-                var key = new byte[32]; 
+                var key = new byte[32]; // Clave de 256 bits
                 generator.GetBytes(key);
                 return key;
             }
