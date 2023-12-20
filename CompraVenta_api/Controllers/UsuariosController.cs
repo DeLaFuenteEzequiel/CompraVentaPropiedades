@@ -1,15 +1,12 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
 using CompraVenta_api.Data;
 using CompraVenta_api.Models;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Threading.Tasks;
-using System.Text;
 using System.IdentityModel.Tokens.Jwt;
 using Microsoft.IdentityModel.Tokens;
 using System.Security.Claims;
+using System.Security.Cryptography;
 
 namespace CompraVenta_api.Controllers
 {
@@ -79,7 +76,8 @@ namespace CompraVenta_api.Controllers
             await _context.SaveChangesAsync();
             return usuario;
         }
- [HttpPost("login")]
+
+        [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginModel model)
         {
             var usuario = await _context.Usuarios
@@ -93,9 +91,10 @@ namespace CompraVenta_api.Controllers
 
             return Unauthorized();
         }
+
         private string GenerarTokenJwt(Usuario usuario)
         {
-            var key = Encoding.ASCII.GetBytes("TuClaveSecretaAquí"); // Cambia esta clave secreta
+            var key = GenerarClaveSegura(); 
             var tokenHandler = new JwtSecurityTokenHandler();
             var tokenDescriptor = new SecurityTokenDescriptor
             {
@@ -103,13 +102,22 @@ namespace CompraVenta_api.Controllers
                 {
                     new Claim(ClaimTypes.Name, usuario.NombreUsuario),
                     new Claim(ClaimTypes.Email, usuario.CorreoElectronico),
-                    // Puedes agregar más claims según tus necesidades
                 }),
-                Expires = DateTime.UtcNow.AddHours(1), // Tiempo de expiración del token
+                Expires = DateTime.UtcNow.AddHours(1),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
             var token = tokenHandler.CreateToken(tokenDescriptor);
             return tokenHandler.WriteToken(token);
+        }
+
+        private byte[] GenerarClaveSegura()
+        {
+            using (var generator = RandomNumberGenerator.Create())
+            {
+                var key = new byte[32]; 
+                generator.GetBytes(key);
+                return key;
+            }
         }
     }
 
