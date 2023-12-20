@@ -1,13 +1,27 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace CompraVenta_api.Models
 {
     public class Usuario
     {
-         public int UsuarioId { get; set; }
-        public required string NombreUsuario { get; set; }
-        public required string Contrasenia{get;set;}
-        public required string NombreReal { get; set; }
-        public required string CorreoElectronico { get; set; }
-        public required string Dni { get; set; }
-        public required string Localidad { get; set; }
+        public int UsuarioId { get; set; }
+
+        [Required]
+        public string NombreUsuario { get; set; } = string.Empty;
+
+        [Required]
+        public string Contrasenia { get; set; } = string.Empty;
+
+        [Required]
+        public string NombreReal { get; set; } = string.Empty;
+
+        [Required]
+        public string CorreoElectronico { get; set; } = string.Empty;
+
+        [Required]
+        public string Dni { get; set; } = string.Empty;
+
+        [Required]
+        public string Localidad { get; set; } = string.Empty;
     }
 }
