@@ -3,7 +3,6 @@ using CompraVenta_api.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-
 namespace CompraVenta_api.Controllers
 {
 [ApiController]

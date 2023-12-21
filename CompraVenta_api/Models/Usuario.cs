@@ -23,5 +23,7 @@ namespace CompraVenta_api.Models
 
         [Required]
         public string Localidad { get; set; } = string.Empty;
+
+        public required decimal Registro { get; set; }
     }
 }

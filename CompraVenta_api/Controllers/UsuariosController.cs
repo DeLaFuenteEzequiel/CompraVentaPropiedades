@@ -86,7 +86,7 @@ namespace CompraVenta_api.Controllers
             if (usuario != null)
             {
                 var token = GenerarTokenJwt(usuario);
-                return Ok(new { Token = token });
+                return Ok(new { Token = token, UserId = usuario.UsuarioId});
             }
 
             return Unauthorized();
@@ -94,7 +94,7 @@ namespace CompraVenta_api.Controllers
 
         private string GenerarTokenJwt(Usuario usuario)
         {
-            var key = GenerarClaveSegura(); // Usa la clave generada aleatoriamente
+            var key = GenerarClaveSegura(); 
             var tokenHandler = new JwtSecurityTokenHandler();
             var tokenDescriptor = new SecurityTokenDescriptor
             {
@@ -114,7 +114,7 @@ namespace CompraVenta_api.Controllers
         {
             using (var generator = RandomNumberGenerator.Create())
             {
-                var key = new byte[32]; // Clave de 256 bits
+                var key = new byte[32]; 
                 generator.GetBytes(key);
                 return key;
             }

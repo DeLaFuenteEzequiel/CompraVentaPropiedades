@@ -13,5 +13,7 @@ namespace CompraVenta_api.Models
     public required int Ambientes { get; set; }
 
     public required decimal Valor { get; set; }
+
+    public required decimal Registro { get; set; }
     }
 }
